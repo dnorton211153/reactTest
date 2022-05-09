@@ -24,10 +24,9 @@ export default class Form extends Component {
     event.preventDefault();
     const { name, message } = this.state;
     await axios.post(
-      "https://hwdcmezpwc.execute-api.us-west-1.amazonaws.com/default/serverlessAppFunction",
+      "https://65vpg3icwg.execute-api.us-west-1.amazonaws.com/default/serverlessAppFunction",
       { key1: `${name}, ${message}` },
       { headers: {
-        'content-type': 'text/json',
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': '*',
       }}
