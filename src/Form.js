@@ -27,8 +27,6 @@ export default class Form extends Component {
       "https://65vpg3icwg.execute-api.us-west-1.amazonaws.com/default/serverlessAppFunction",
       { key1: `${name}, ${message}` },
       { headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': '*',
       }}
     );
   }
